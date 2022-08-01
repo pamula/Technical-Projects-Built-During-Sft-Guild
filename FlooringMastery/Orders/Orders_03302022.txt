@@ -1,0 +1,3 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost, LaborCost,Tax,Total
+1,Amanda,ut,3.37,carpet,100,2.25,2.10,225.00,210.00,14.7,449.70
+2,ada,dr,ut,3.37,granite,110.0,6.60,8.23,726.000,905.300,55.0,1686.300

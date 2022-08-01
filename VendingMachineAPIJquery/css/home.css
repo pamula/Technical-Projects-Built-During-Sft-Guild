@@ -1,0 +1,156 @@
+
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+}
+#totalLabel{
+	
+	left: 220%;
+	text-align: center;
+	width: 720px;
+	top: 100px;
+	
+}
+
+.inputBox{
+background-color: black;
+position: relative;
+width: 180px;
+left: 300px;
+color: red;
+}
+
+#editInputMoney{
+text-align: center;
+}
+h1{
+	text-align: center;
+}
+#quarterButton{
+	width: 150px;
+	position: relative;
+	left: 220px;
+	bottom: -15px;
+}
+
+#nickelButton{
+	width: 150px;
+	position: relative;
+	left: 220px;
+	bottom: -25px;
+}
+#dollarButton{
+	width: 150px;
+	position: relative;
+	left: 220px;
+	bottom: -15px;
+
+	}
+	#dimeButton{
+	width: 150px;
+	position: relative;
+	left: 220px;
+	bottom: -25px;
+	}
+#line{
+	position: relative;
+	left: 250px;
+	bottom: -48px;
+	background-color: black;
+}
+#messageLabel {
+	position: relative;
+	left: 350px;
+	bottom: -45px;
+	width:150px;
+}
+#messageForBoughtOrNot{
+position: relative;
+	left: 330px;
+	bottom: -45px;
+	width:180px;
+
+}
+#purchaseButton{
+	position: relative;
+	left: 300px;
+	bottom: -58px;
+width:150px;
+
+	}
+	#message{
+		position: relative;
+	left: 300px;
+	bottom: -55px;
+	height:55px;
+	width: 200px;
+	}
+#itemsLabel{
+	position: relative;
+	left: 240px;
+	bottom: -65px;
+	
+}
+#itemsBox{
+	position: relative;
+	left: 280px;
+	bottom: -35px;
+	
+}
+#lastLine{
+	background-color: black;
+	position: relative;
+	left: 280px;
+	bottom: -65px;
+}
+#changeLabel{
+	
+	position: relative;
+	left: 350px;
+	bottom: -60px;
+}
+#changeReturnButton{
+position: relative;
+	left: 330px;
+	bottom: -80px;
+	width:140px;
+}
+#inputMoney{
+	bottom: -45px;
+}
+#firstLine{
+	background-color: black;
+}
+#lastSection{
+	bottom: -50px;
+}
+
+.column {
+ 
+  width: 30.33%;
+  padding: 6px;
+  display: inline-block;
+   
+  border: 2px #000000 solid;
+  margin-top:4px;
+  margin-bottom:5px; 
+  border-collapse: separate;  
+  border-spacing: 40px;
+ 
+  
+}
+#itemsRowsWithCards{
+	border-collapse: separate;  
+  border-spacing: 30px;
+}
+#errorMessages{
+	background-color: red;
+}
+

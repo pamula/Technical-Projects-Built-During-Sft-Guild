@@ -1,0 +1,3 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost, LaborCost,Tax,Total
+1,uofu,ut,3.37,granite,110.0,6.60,8.23,726.000,905.300,55.0,1686.300
+2,sam,tx,4.45,marble,210,3.4,10.0,714.0,2100.0,125.2,2939.2

@@ -1,0 +1,12 @@
+com\javaonly\flooringmastery\service\ProductsServiceImplTest.class
+com\javaonly\flooringmastery\dao\ProductsDaoFileImplTest.class
+com\javaonly\flooringmastery\service\OrderAuditDaoStubImpl.class
+com\javaonly\flooringmastery\service\OrdersServiceImplTest.class
+com\javaonly\flooringmastery\dao\OrdersDaoStubImpl.class
+com\javaonly\flooringmastery\dao\TaxDaoStubImpl.class
+com\javaonly\flooringmastery\service\TaxAuditDaoStubImpl.class
+com\javaonly\flooringmastery\service\TaxServiceImplTest.class
+com\javaonly\flooringmastery\dao\TaxDaoFileImplTest.class
+com\javaonly\flooringmastery\service\ProductsAuditDaoStubImpl.class
+com\javaonly\flooringmastery\dao\ProductsDaoStubImpl.class
+com\javaonly\flooringmastery\dao\OrdersDaoFileImplTest.class

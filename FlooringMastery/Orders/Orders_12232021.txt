@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost, LaborCost,Tax,Total
+1,jam,tx,4.45,laminate,210.0,1.75,2.10,367.500,441.000,0.0000,808.5000

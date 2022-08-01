@@ -1,0 +1,7 @@
+ProductType,CostPerSquareFoot,LaborCostPerSquareFoot
+marble,3.4,10.0
+wooden,5.15,4.75
+carpet,2.25,2.10
+Tile,3.50,4.15
+Granite,6.60,8.23
+Laminate,1.75,2.10

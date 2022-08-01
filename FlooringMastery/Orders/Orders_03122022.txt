@@ -1,0 +1,3 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost, LaborCost,Tax,Total
+1,23dhruv,tx,4.45,carpet,110,2.25,2.10,247.50,231.00,21.3,499.80
+2,sam,tx,4.45,carpet,110,2.25,2.10,247.50,231.00,21.3,499.80

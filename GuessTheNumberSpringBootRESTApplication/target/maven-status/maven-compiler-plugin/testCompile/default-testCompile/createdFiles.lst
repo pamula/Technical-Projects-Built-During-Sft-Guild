@@ -1,0 +1,3 @@
+com\javaonly\guessthenumberspringbootrestapplication\dao\GameDaoDatabaseTest.class
+com\javaonly\guessthenumberspringbootrestapplication\service\ServiceLayerForTheGameImplTest.class
+com\javaonly\guessthenumberspringbootrestapplication\dao\RoundsDaoDatabaseTest.class

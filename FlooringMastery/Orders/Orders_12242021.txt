@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost, LaborCost,Tax,Total
+1,yellow,tx,4.45,carpet,110.0,2.25,2.10,247.500,231.000,21.3,499.800

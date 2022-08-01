@@ -1,0 +1,4 @@
+com\javaonly\vendingmachine\service\VendingMachineAuditDaoStubImpl.class
+com\javaonly\vendingmachine\dao\VendingMachineDaoFileImplTest.class
+com\javaonly\vendingmachine\dao\VendingMachineDaoStubImpl.class
+com\javaonly\vendingmachine\service\VendingMachineServiceImplTest.class
