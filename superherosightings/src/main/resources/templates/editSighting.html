@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>SuperHero Sightings</title>
+  </head>
+  <body>
+
+<div class="container">
+            <div class="row m-4">
+                <div class="col text-center border border-dark">
+                    <h1><a href="/" class="text-dark">SuperHero Sightings</a></h1>
+                </div>
+            </div>
+            <div class="row m-4 border border-dark">
+            <div class="col text-center m-3">
+                <a href="allHerosOrVillians" class="btn btn-outline-primary btn-lg">Hero-Villains</a>
+            </div>
+            <div class="col text-center m-3">
+                <a href="organizations" class="btn btn-outline-primary btn-lg">Organizations</a>
+            </div>
+            <div class="col text-center m-3">
+                <a href="locations" class="btn btn-outline-primary btn-lg">Locations</a>
+            </div>
+            <div class="col text-center m-3">
+                <a href="sightings" class="btn btn-outline-primary btn-lg">Sightings</a>
+            </div>
+        </div>
+    
+    
+            <div class="row m-4 border border-dark">
+                <div class="col-3 text-center m-3">
+                    <span class="h3">Edit Sighting</span>
+                </div>
+                <div class="col-7 text-center m-3">
+                    <form action="editSighting" method="POST">
+                        <div class="form-group row">
+                            <label for="dateSighted" class="col-3 col-form-label">
+                                Date-Sighted</label>
+                            <div class="col-9">
+                                <input type="date" name="dateSighted" id="dateSighted" 
+                                       class="form-control" th:value="${sightings.dateSighted}" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="description" class="col-3 col-form-label">
+                                Description</label>
+                            <div class="col-9">
+                                <input type="text" name="description" id="description" 
+                                       class="form-control"  th:value="${sightings.description}" required/>
+                            </div>
+                        </div>
+                        
+                       
+                       
+                        
+                        <div class="form-group row">
+                            <label for="locations" class="col-3 col-form-label">Locations</label>
+                            <div class="col-9">
+                                <select multiple id="locations" name="locationId" 
+                                        class="form-control" required>
+                                    <option th:each="location : ${locations}" 
+                                            th:value="${location.locationId}" 
+                                            th:text="${location.locationName}" 
+                                            th:selected="${sightings.location.locationId == location.locationId}"> 
+                                            <!--  th:selected="${sightings.location.contains(location)}">-->
+                                            
+                                       Location Name</option>
+                                </select>
+                            </div>
+                        </div>
+                     <!--  <input type="hidden" name="locationId" th:value="${sightings.sightingId}"/> -->
+                        
+                    <div class="form-group row">
+                            <label for="heroOrVillian" class="col-3 col-form-label">Heros-Villians</label>
+                            <div class="col-9">
+                                <select multiple id="heroOrVillian" name="heroOrVillianId" 
+                                        class="form-control" required>
+                                    <option th:each="heroOrVillian : ${herosOrVillians}" 
+                                            th:value="${heroOrVillian.heroOrVillianId}" 
+                                            th:text="${heroOrVillian.name}" 
+                                             
+                                          th:selected="${sightings.heroOrVillian.heroOrVillianId == heroOrVillian.heroOrVillianId}"> 
+                                       Hero Name</option>
+                                </select>
+                            </div>
+                        </div>
+                    <!--  <input type="hidden" name="heroOrVillianId" th:value="${sightings.sightingId}"/> -->
+                    <input type="hidden" name="sightingId" th:value="${sightings.sightingId}"/>
+                      <button type="submit" class="btn btn-primary">
+                            Update Sighting</button>
+                    </form>
+                </div>
+            </div>
+        </div>     
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
