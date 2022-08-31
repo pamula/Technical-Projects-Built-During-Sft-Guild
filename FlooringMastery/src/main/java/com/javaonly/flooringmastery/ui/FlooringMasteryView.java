@@ -176,7 +176,7 @@ io.print("TOTAL ORDER COST : " + currentOrder.getTotalOrderCost());
         //CustomerName,state,productType,area
         //Enter customer name (Ada Lovelace):
 
-       // Orders currentOrder = new Orders(orderNumber);
+       
        Orders currentOrder = new Orders();
 currentOrder.setOrderNumber(order.getOrderNumber());
         //currentOrder.setDate(date);
@@ -193,13 +193,7 @@ currentOrder.setOrderNumber(order.getOrderNumber());
             currentOrder.setState(order.getState());
         } else if (!order.getState().equalsIgnoreCase(state)) {
             currentOrder.setState(state);
-        //}
-//        for (Tax allTaxesList : allTaxes) {
-//            if (allTaxesList.getStateAbbrevation().equalsIgnoreCase(state)) {
-//                currentOrder.setState(state);
-//                currentOrder.setTaxValues(allTaxesList.getTaxRate());
-//            }
-//        }
+       
         }
         io.print("HERE IS NEW STSTE " + currentOrder.getState());
         io.print("choose from product list");
