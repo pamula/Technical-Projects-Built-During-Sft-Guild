@@ -37,23 +37,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class App {
     public static void main(String[] args){
-//       UserIo myIo = new UserIoConsoleImpl();
-//       FlooringMasteryView myView = new FlooringMasteryView(myIo);
-//       
-//       OrdersDao myDao = new OrdersDaoFileImpl();
-//       OrderAuditDao myAuditDao = new OrderAuditDa3oImpl();
-//       OrdersService myService = new OrdersServiceImpl(myDao,myAuditDao);
-//       
-//       ProductsDao myProductsDao = new ProductsDaoFileImpl();
-//       ProductsAuditDao productAuditDao = new ProductsAuditDaoImpl();
-//       ProductsService myProductsService = new ProductsServiceImpl(myProductsDao,productAuditDao);
-//      
-//       TaxDao myTaxDao = new TaxDaoFileImpl();
-//        TaxAuditDao taxAuditDao = new TaxAuditDaoImpl();
-//       TaxService myTaxService = new TaxServiceImpl(myTaxDao,taxAuditDao); 
-//       
-//       OrdersController myController = new OrdersController(myView , myService ,myProductsService,myTaxService  );
-//       myController.run();
+
        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
        OrdersController myController = ctx.getBean("controller",OrdersController.class);
        myController.run();
