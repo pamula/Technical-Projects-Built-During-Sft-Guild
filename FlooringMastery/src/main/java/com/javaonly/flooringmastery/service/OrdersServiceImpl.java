@@ -58,11 +58,7 @@ public class OrdersServiceImpl implements OrdersService {
     public void createOrder(String date, Orders order) throws DataPersistenceException, DuplicateOrderNumberException,
             OrdersDataValidationException, NoSuchOrderException {
 
-////////
-//                if(dao.getOneOrder(date, order.getOrderNumber())!=null){
-//           
-//                throw new DuplicateOrderNumberException("order number already exists");
-//            } 
+
         validateOrderData(order);
 
         dao.addOrder(date, order);
