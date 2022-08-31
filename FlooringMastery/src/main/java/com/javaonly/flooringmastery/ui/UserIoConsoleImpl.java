@@ -65,7 +65,7 @@ public String addOrderCustomerName(String msg){
            }else{
                userChoice = false;
            }
-           //userInput = readStringForValidate( prompt);
+           
            //Use Validation Line of Code to Validate userInput - if valid set UserChoice to true
            //If False let user they did something bad and don't change userChoice and it will loop
          
@@ -188,7 +188,7 @@ public String addOrderCustomerName(String msg){
         Scanner console = new Scanner(System.in);
        
       String userInput =  "HI";//2021-12-16
-    // String userInputToTest = userInput;
+    
       boolean userChoice = true;
         while(userChoice){
          try{
@@ -241,15 +241,15 @@ public String addOrderCustomerName(String msg){
         while(userChoice){
         try{
              userInput = console.nextLine();//2021-12-26
-            //userInput = userInput.toString();
+           
         LocalDate ld3 = LocalDate.parse(userInput); //today's date
         String isoDate1 = ld3.toString();
-          //System.out.println(ld3 + "ld3, user date here");
+         
           ld3= LocalDate.parse(isoDate1);
 
           String formatted2 = ld3.format(DateTimeFormatter.ofPattern("MMddyyyy"));
           userInput = formatted2;
-          // System.out.println(userInput + "aftere formatted");
+          
             userChoice = false;
         }catch(DateTimeParseException e){
            System.out.println("GIVE CORRECT DATE/FORMAT AS SHOWN");
